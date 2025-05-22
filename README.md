@@ -114,3 +114,68 @@ Copy
 Edit
 Input Email: Get FREE cashback by clicking this link now
 Prediction: Spam Email
+
+
+
+
+
+
+
+
+
+
+Sentiment Analysis using TF-IDF and Multinomial Naive Bayes – Text Summary
+Purpose:
+This code is designed to classify text messages (movie reviews) as positive or negative using machine learning.
+
+Libraries Used:
+
+TfidfVectorizer: Converts text data into numerical values based on word importance (TF-IDF).
+
+MultinomialNB: Naive Bayes classifier suitable for discrete features like word counts or TF-IDF values.
+
+train_test_split: Splits the dataset into training and testing sets.
+
+accuracy_score: Evaluates how accurate the model’s predictions are.
+
+Dataset:
+
+texts: A list of 6 movie reviews.
+
+labels: A list of sentiment values:
+
+1 = positive review
+
+0 = negative review
+
+Text Preprocessing:
+
+TfidfVectorizer is used to convert the reviews into numerical vectors based on word frequency and importance.
+
+These vectors are used as features for the machine learning model.
+
+Train-Test Split:
+
+The dataset is split into 67% training data and 33% testing data.
+
+Model Training:
+
+The MultinomialNB classifier is trained on the training data to learn how to classify the reviews.
+
+Prediction & Evaluation:
+
+The model makes predictions on the test set.
+
+Actual labels and predicted labels are printed.
+
+The model's accuracy is displayed using accuracy_score.
+
+Example Output (may vary each time due to random split):
+
+makefile
+Copy
+Edit
+Predictions: [1 0]
+Actual: [1 0]
+Accuracy: 1.0
+
