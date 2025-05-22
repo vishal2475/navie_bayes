@@ -54,3 +54,63 @@ Output: The result is printed as either “SPAM” or “NOT SPAM”.
 
 This approach is good for situations where the presence or absence of certain keywords is more important than how often they appear.
 
+
+
+
+
+
+
+
+Spam Detection using TF-IDF and Gaussian Naive Bayes – Text Summary
+Purpose:
+This code is used to detect whether a given email/message is spam or not spam using machine learning.
+
+Libraries Used:
+
+TfidfVectorizer: Converts text into numerical TF-IDF values (word importance).
+
+GaussianNB: A classifier used for continuous data (like TF-IDF values).
+
+train_test_split: Splits the data into training and testing sets.
+
+accuracy_score: Measures the prediction accuracy.
+
+Dataset:
+
+texts: A list of 10 messages (spam and non-spam).
+
+labels: A list of corresponding labels (1 = spam, 0 = not spam).
+
+Text Preprocessing:
+
+TF-IDF vectorization is used to convert the messages into numeric feature vectors.
+
+These vectors are converted into arrays for use in the model.
+
+Model Training:
+
+The dataset is split into training and test sets (70% train, 30% test).
+
+GaussianNB is trained on the training set.
+
+Prediction and Evaluation:
+
+The model predicts labels for test data.
+
+Accuracy is printed to show how well the model performs.
+
+New Email Prediction:
+
+A new message is input and transformed using the same vectorizer.
+
+The trained model predicts whether the message is spam or not spam.
+
+The prediction result is printed.
+
+Output Example:
+
+kotlin
+Copy
+Edit
+Input Email: Get FREE cashback by clicking this link now
+Prediction: Spam Email
