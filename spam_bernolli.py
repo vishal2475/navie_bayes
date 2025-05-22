@@ -27,9 +27,9 @@ user_vector = vectorizer.transform([user_input])
 prediction = model.predict(user_vector)
 
 if prediction[0] == 1:
-    print("❗ This is a SPAM message.")
+    print(" This is a SPAM message.")
 else:
-    print("✅ This is a NOT SPAM message.")
+    print(" This is a NOT SPAM message.")
  
 
 
