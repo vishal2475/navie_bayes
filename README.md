@@ -1,180 +1,84 @@
- from sklearn.naive_bayes import MultinomialNB
-  Meaning:
-This line imports the Multinomial Naive Bayes model from the sklearn library.
-This model is best suited for text classification where we count how often words appear.
+# 📚 Text Classification Projects with Naive Bayes
 
-..... from sklearn.feature_extraction.text import CountVectorizer
-  Meaning:
-Imports a tool called CountVectorizer which converts text into numbers by counting how many times each word appears.
+This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
 
-..... from sklearn.model_selection import train_test_split
-  Meaning:
-This function helps split your dataset into training and testing sets, so that the model can learn on one part and be tested on the other.
+---
 
-......texts = [..]
-  Meaning:
-These are your input texts (like email or messages) that you want to classify.
+## 🚀 Project 1: Spam Detection using Multinomial Naive Bayes
 
-......labels = [1, 0, 1, 0]
-  Meaning:
-These are the target labels for each text.
+### ✅ What it does:
+Checks how many times each word appears in the message and uses that to decide if it's spam.
 
-1 = Positive (like or good)
+### 🛠️ Tools Used:
+- `MultinomialNB`: For checking word counts.
+- `CountVectorizer`: Changes text into numbers by counting words.
+- `train_test_split`: Splits the data into training and testing.
 
-0 = Negative (dislike or bad)
+### 🧠 Steps:
+1. Messages are stored in a list.
+2. Each message is labeled (1 = spam, 0 = not spam).
+3. Messages are changed into numbers (word counts).
+4. Model is trained on this data.
+5. User enters a new message to check if it is spam or not.
 
-.... vectorizer = CountVectorizer()
-  Meaning:
-Creates a CountVectorizer object which will be used to convert the text into numeric word count format.
+---
 
-.... X = vectorizer.fit_transform(texts)
-  Meaning:
-This line converts the text data into word count matrix (numerical format) using the vectorizeer..
+## 🚀 Project 2: Spam Detection using Bernoulli Naive Bayes
 
+### ✅ What it does:
+Checks **if a word is present** (yes or no), not how many times it appears.
 
+### 🛠️ Tools Used:
+- `BernoulliNB`: For yes/no word checking.
+- `CountVectorizer(binary=True)`: Changes text to 1s and 0s.
+- `train_test_split`: Splits the data.
 
+### 🧠 Steps:
+1. Convert messages to binary (1 = word is there, 0 = not there).
+2. Train the model.
+3. Check if a new message is spam or not.
 
+---
 
-Summary of the Spam Detection Code using Bernoulli Naive Bayes
-This Python script is a simple spam classifier built using the Bernoulli Naive Bayes algorithm from Scikit-learn. It works as follows:
+## 🚀 Project 3: Spam Detection using Gaussian Naive Bayes with TF-IDF
 
-Text Data: A list of sample messages is provided, labeled as spam (1) or not spam (0).
+### ✅ What it does:
+Uses word importance (not just count) to find out if a message is spam.
 
-Vectorization: The messages are converted into binary vectors (1 if a word is present, 0 if not) using CountVectorizer(binary=True).
+###  Tools Used:
+- `TfidfVectorizer`: Gives importance to words.
+- `GaussianNB`: Works well with continuous numbers like TF-IDF.
+- `accuracy_score`: Checks how correct the model is.
 
-Train-Test Split: The dataset is split into training and testing sets.
+### Steps:
+1. Messages are turned into TF-IDF numbers.
+2. Data is split into training and testing.
+3. Model is trained.
+4. New message is checked for spam or not.
 
-Model Training: A BernoulliNB model is trained on the binary vectors.
 
-User Input: The user can enter a new message.
 
-Prediction: The model predicts whether the message is spam or not.
+---
 
-Output: The result is printed as either “SPAM” or “NOT SPAM”.
+## Project 4: Sentiment Analysis using Multinomial Naive Bayes
 
-This approach is good for situations where the presence or absence of certain keywords is more important than how often they appear.
+###  What it does:
+Checks if a movie review is **positive** or **negative**.
 
+###  Tools Used:
+- `TfidfVectorizer`: Converts text into word importance numbers.
+- `MultinomialNB`: Best for TF-IDF values.
+- `accuracy_score`: Shows how good the model is.
 
+### Steps:
+1. Reviews are stored in a list.
+2. Labels: 1 = positive, 0 = negative.
+3. Text is turned into numbers (TF-IDF).
+4. Model is trained.
+5. Shows predictions and accuracy.
 
+### Example:
 
-
-
-
-
-Spam Detection using TF-IDF and Gaussian Naive Bayes – Text Summary
-Purpose:
-This code is used to detect whether a given email/message is spam or not spam using machine learning.
-
-Libraries Used:
-
-TfidfVectorizer: Converts text into numerical TF-IDF values (word importance).
-
-GaussianNB: A classifier used for continuous data (like TF-IDF values).
-
-train_test_split: Splits the data into training and testing sets.
-
-accuracy_score: Measures the prediction accuracy.
-
-Dataset:
-
-texts: A list of 10 messages (spam and non-spam).
-
-labels: A list of corresponding labels (1 = spam, 0 = not spam).
-
-Text Preprocessing:
-
-TF-IDF vectorization is used to convert the messages into numeric feature vectors.
-
-These vectors are converted into arrays for use in the model.
-
-Model Training:
-
-The dataset is split into training and test sets (70% train, 30% test).
-
-GaussianNB is trained on the training set.
-
-Prediction and Evaluation:
-
-The model predicts labels for test data.
-
-Accuracy is printed to show how well the model performs.
-
-New Email Prediction:
-
-A new message is input and transformed using the same vectorizer.
-
-The trained model predicts whether the message is spam or not spam.
-
-The prediction result is printed.
-
-Output Example:
-
-kotlin
-Copy
-Edit
-Input Email: Get FREE cashback by clicking this link now
-Prediction: Spam Email
-
-
-
-
-
-
-
-
-
-
-Sentiment Analysis using TF-IDF and Multinomial Naive Bayes – Text Summary
-Purpose:
-This code is designed to classify text messages (movie reviews) as positive or negative using machine learning.
-
-Libraries Used:
-
-TfidfVectorizer: Converts text data into numerical values based on word importance (TF-IDF).
-
-MultinomialNB: Naive Bayes classifier suitable for discrete features like word counts or TF-IDF values.
-
-train_test_split: Splits the dataset into training and testing sets.
-
-accuracy_score: Evaluates how accurate the model’s predictions are.
-
-Dataset:
-
-texts: A list of 6 movie reviews.
-
-labels: A list of sentiment values:
-
-1 = positive review
-
-0 = negative review
-
-Text Preprocessing:
-
-TfidfVectorizer is used to convert the reviews into numerical vectors based on word frequency and importance.
-
-These vectors are used as features for the machine learning model.
-
-Train-Test Split:
-
-The dataset is split into 67% training data and 33% testing data.
-
-Model Training:
-
-The MultinomialNB classifier is trained on the training data to learn how to classify the reviews.
-
-Prediction & Evaluation:
-
-The model makes predictions on the test set.
-
-Actual labels and predicted labels are printed.
-
-The model's accuracy is displayed using accuracy_score.
-
-Example Output (may vary each time due to random split):
-
-makefile
-
-Predictions: [1 0]
-Actual: [1 0]
-Accuracy: 1.0
-
+Predicted: [1, 0]
+Actual: [1, 0]
+Accuracy: 100%
