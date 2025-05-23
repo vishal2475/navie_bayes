@@ -173,8 +173,7 @@ The model's accuracy is displayed using accuracy_score.
 Example Output (may vary each time due to random split):
 
 makefile
-Copy
-Edit
+
 Predictions: [1 0]
 Actual: [1 0]
 Accuracy: 1.0
