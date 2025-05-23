@@ -1,20 +1,20 @@
-# 📚 Text Classification Projects with Naive Bayes
+# Text Classification Projects with Naive Bayes
 
 This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
 
 ---
 
-## 🚀 Project 1: Spam Detection using Multinomial Naive Bayes
+## Project 1: Spam Detection using Multinomial Naive Bayes
 
-### ✅ What it does:
+### What it does:
 Checks how many times each word appears in the message and uses that to decide if it's spam.
 
-### 🛠️ Tools Used:
+###  Tools Used:
 - `MultinomialNB`: For checking word counts.
 - `CountVectorizer`: Changes text into numbers by counting words.
 - `train_test_split`: Splits the data into training and testing.
 
-### 🧠 Steps:
+### Steps:
 1. Messages are stored in a list.
 2. Each message is labeled (1 = spam, 0 = not spam).
 3. Messages are changed into numbers (word counts).
@@ -23,26 +23,26 @@ Checks how many times each word appears in the message and uses that to decide i
 
 ---
 
-## 🚀 Project 2: Spam Detection using Bernoulli Naive Bayes
+## Project 2: Spam Detection using Bernoulli Naive Bayes
 
-### ✅ What it does:
+### What it does:
 Checks **if a word is present** (yes or no), not how many times it appears.
 
-### 🛠️ Tools Used:
+###  Tools Used:
 - `BernoulliNB`: For yes/no word checking.
 - `CountVectorizer(binary=True)`: Changes text to 1s and 0s.
 - `train_test_split`: Splits the data.
 
-### 🧠 Steps:
+### Steps:
 1. Convert messages to binary (1 = word is there, 0 = not there).
 2. Train the model.
 3. Check if a new message is spam or not.
 
 ---
 
-## 🚀 Project 3: Spam Detection using Gaussian Naive Bayes with TF-IDF
+## Project 3: Spam Detection using Gaussian Naive Bayes with TF-IDF
 
-### ✅ What it does:
+### What it does:
 Uses word importance (not just count) to find out if a message is spam.
 
 ###  Tools Used:
