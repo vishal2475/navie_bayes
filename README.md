@@ -154,5 +154,43 @@ Make sure the dataset file path is correct.
 
 Use proper encoding like 'latin-1' if the file contains special characters.
 
-Required libraries should be installed before running the project.
+Required libraries should be installed before running the project.+
+
+
+
+
+
+
+
+#  IMDb Sentiment Analysis using Multinomial Naive Bayes
+
+This project classifies IMDb movie reviews as **Positive ** or **Negative ** using the **Multinomial Naive Bayes** algorithm. The reviews are taken from a local dataset (`movie.csv`) and processed using Natural Language Processing techniques.
+
+---
+
+##  Dataset
+
+- **File Path:**  
+  `C:\Users\C3STREAMLAND\Downloads\archive (3)\movie.csv`
+
+- **Expected Columns:**  
+  - `text`: Contains the movie review  
+  - `label`: Contains the sentiment (either `positive` or `negative`)
+
+---
+
+##  Requirements
+
+Install the required Python libraries using pip:
+
+- `pandas` for data handling  
+- `scikit-learn` for machine learning and evaluation
+
+```bash
+pip install pandas scikit-learn
+```
+
+# Project Steps
+ * Load the CSV file containing the movie reviews.
+
 
