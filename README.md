@@ -193,4 +193,41 @@ pip install pandas scikit-learn
 # Project Steps
  * Load the CSV file containing the movie reviews.
 
+   ##  Requirements
+
+Install the required Python libraries using pip:
+
+- `pandas` for data handling  
+- `scikit-learn` for machine learning and evaluation
+
+```bash
+pip install pandas scikit-learn
+```
+
+# Project Steps
+ * Load the CSV file containing the movie reviews.
+
+## Clean the data:
+
+* Remove any rows with missing labels.
+
+* Convert text labels like positive and negative into numeric form (1 and 0).
+
+* Convert the text data into numbers using CountVectorizer (Bag-of-Words method).
+
+* Split the data into training and testing sets.
+
+* Train the Naive Bayes model using the training data.
+
+* Evaluate the model's accuracy using the test data.
+
+* Try predicting the sentiment of a custom review to test the model.
+
+## Sample Output
+* Displays the first few rows from the dataset.
+
+* Shows the accuracy of the trained model (for example: 87%).
+
+* Prints whether a given review is positive or negative.
+
 
