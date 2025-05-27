@@ -89,7 +89,7 @@ Accuracy: 100%
 
 
 
-Spam Message Classifier
+### Spam Message Classifier
 Objective
 The goal of this project is to detect whether a given SMS message is SPAM or NOT SPAM using a machine learning model.
 
