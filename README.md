@@ -93,68 +93,68 @@ Accuracy: 100%
 ### Objective
 * The goal of this project is to detect whether a given SMS message is SPAM or NOT SPAM using a machine learning model.
 
-Tools and Libraries Used
-Python – Programming language
+* Tools and Libraries Used
+* Python – Programming language
 
-pandas – For reading and processing the dataset
+* pandas – For reading and processing the dataset
 
-scikit-learn – For machine learning algorithms
+* scikit-learn – For machine learning algorithms
 
-CountVectorizer – To convert text messages into numbers
+* CountVectorizer – To convert text messages into numbers
 
-Bernoulli Naive Bayes – Classification model
+* Bernoulli Naive Bayes – Classification model
 
-Dataset Information
-The dataset contains SMS messages and their corresponding labels (spam or ham).
+### Dataset Information
+* The dataset contains SMS messages and their corresponding labels (spam or ham).
 
-Columns used:
+### Columns used:
 
-v1 – Label (either 'ham' or 'spam')
+* v1 – Label (either 'ham' or 'spam')
 
-v2 – The actual SMS message content
+* v2 – The actual SMS message content
 
-Steps Involved
+* Steps Involved
 1. Import Libraries
 Import all necessary libraries such as pandas, CountVectorizer, train_test_split, and BernoulliNB.
 
 2. Load the Dataset
-The dataset is read using pandas. The correct file path is provided, and only the required columns are selected.
+* The dataset is read using pandas. The correct file path is provided, and only the required columns are selected.
 
 3. Rename Columns
-The columns v1 and v2 are renamed to label and message for better understanding.
+* The columns v1 and v2 are renamed to label and message for better understanding.
 
 4. Convert Labels to Numbers
-The label column is mapped as follows:
+* The label column is mapped as follows:
 
-ham becomes 0
+* ham becomes 0
 
-spam becomes 1
+* spam becomes 1
 
 5. Vectorize the Messages
-Text data (messages) is converted into numerical format using CountVectorizer. This helps the machine learning model understand the text.
+* Text data (messages) is converted into numerical format using CountVectorizer. This helps the machine learning model understand the text.
 
 6. Split the Data
-The dataset is split into training and testing sets using train_test_split.
+* The dataset is split into training and testing sets using train_test_split.
 
 7. Train the Model
-The Bernoulli Naive Bayes model is trained using the training set.
+* The Bernoulli Naive Bayes model is trained using the training set.
 
 8. User Input and Prediction
-A user can enter a message. The model will predict if it is SPAM or NOT SPAM based on what it learned from the dataset.
+* A user can enter a message. The model will predict if it is SPAM or NOT SPAM based on what it learned from the dataset.
 
-Sample Output
-Input: "Congratulations! You won a prize!"
-Output: SPAM
+### Sample Output
+* Input: "Congratulations! You won a prize!"
+* Output: SPAM
 
-Input: "Hi, are we still meeting tomorrow?"
-Output: NOT SPAM
+* Input: "Hi, are we still meeting tomorrow?"
+* Output: NOT SPAM
 
-Notes
-Make sure the dataset file path is correct.
+### Notes
+* Make sure the dataset file path is correct.
 
-Use proper encoding like 'latin-1' if the file contains special characters.
+* Use proper encoding like 'latin-1' if the file contains special characters.
 
-Required libraries should be installed before running the project.+
+* Required libraries should be installed before running the project.+
 
 
 
