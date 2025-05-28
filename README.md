@@ -231,3 +231,45 @@ pip install pandas scikit-learn
 * Prints whether a given review is positive or negative.
 
 
+
+# Resume Analyzer – Explanation of Python Libraries
+
+## Libraries Used and Their Purpose:
+
+### 1. `sklearn.feature_extraction.text.TfidfVectorizer`
+- **Purpose:** Converts text into numerical vectors.
+- **Explanation:** Identifies important words in the resume and converts them into a format suitable for machine learning.
+
+### 2. `sklearn.naive_bayes.MultinomialNB`
+- **Purpose:** Used for text classification.
+- **Explanation:** Predicts the job role based on the words in the resume using the Multinomial Naive Bayes algorithm.
+
+### 3. `sklearn.model_selection.train_test_split`
+- **Purpose:** Splits the dataset into training and testing parts.
+- **Explanation:** Helps the model learn from one part of the data (training) and evaluate on the other (testing).
+
+### 4. `sklearn.metrics.accuracy_score`
+- **Purpose:** Checks how accurate the model’s predictions are.
+- **Explanation:** Compares predicted job roles with actual labels and calculates accuracy.
+
+### 5. `tkinter`
+- **Purpose:** Creates the Graphical User Interface (GUI).
+- **Explanation:** Used to build the visual part of the app like windows, buttons, and text boxes.
+
+### 6. `tkinter.messagebox`
+- **Purpose:** Shows the prediction result in a popup.
+- **Explanation:** Displays the predicted job role using a message box popup.
+
+## Summary Table:
+
+| Library Name               | Explanation                                                    |
+|---------------------------|----------------------------------------------------------------|
+| `TfidfVectorizer`         | Converts resume text to vector form by assigning importance    |
+| `MultinomialNB`           | Predicts job role based on the resume using classification     |
+| `train_test_split`        | Divides data into training and testing sets                    |
+| `accuracy_score`          | Evaluates if the prediction is correct                         |
+| `tkinter`                 | Used to create the GUI elements like window, buttons, etc.     |
+| `messagebox`              | Displays the prediction result in a popup                      |
+  
+
+
