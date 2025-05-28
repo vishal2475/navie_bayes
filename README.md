@@ -260,6 +260,18 @@ pip install pandas scikit-learn
 - **Purpose:** Shows the prediction result in a popup.
 - **Explanation:** Displays the predicted job role using a message box popup.
 
+---
+## Requirements
+
+To run this project, you need to install the following Python libraries:
+
+```
+bash
+pip install scikit-learn
+pip install pandas
+pip install tk
+
+---
 ## Summary Table:
 
 | Library Name               | Explanation                                                    |
