@@ -29,7 +29,7 @@ python tf_idf_naive_bayes.py
 
 
 
-##Text Classification Projects with Naive Bayes
+#Text Classification Projects with Naive Bayes
 
 This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
 
