@@ -1,4 +1,35 @@
-# Text Classification Projects with Naive Bayes
+##  Run the Scripts
+
+Run these commands in your terminal to execute each Python script:
+
+```bash
+python bernoli.py
+```
+```
+python job_tagger.py
+```
+```
+python language_detection.py
+```
+```
+python naive_bayes.py
+```
+```
+python sentiment_analyse.py
+```
+```
+python spam_bernolli.py
+```
+```
+python spam_gassian.py
+```
+python tf_idf_naive_bayes.py
+```
+
+
+
+
+##Text Classification Projects with Naive Bayes
 
 This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
 
