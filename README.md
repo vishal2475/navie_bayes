@@ -266,10 +266,15 @@ pip install pandas scikit-learn
 To run this project, you need to install the following Python libraries:
 
 
-bash
+```bash
 pip install scikit-learn
+```
+```
 pip install pandas
+```
+```
 pip install tk
+```
 
 ---
 ## Summary Table:
