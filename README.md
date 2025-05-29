@@ -173,7 +173,9 @@ This project classifies IMDb movie reviews as **Positive ** or **Negative ** usi
 - **Expected Columns:**  
   - `text`: Contains the movie review  
   - `label`: Contains the sentiment (either `positive` or `negative`)
-
+ 
+    
+< **Note :** If you loaded the CSV file in the `python sentiment_analyse.py` program.
 ---
 
 ##  Requirements
@@ -187,22 +189,8 @@ Install the required Python libraries using pip:
 pip install pandas scikit-learn
 ```
 
-# Project Steps
- * Load the CSV file containing the movie reviews.
-
-   ##  Requirements
-
-Install the required Python libraries using pip:
-
-- `pandas` for data handling  
-- `scikit-learn` for machine learning and evaluation
-
-```bash
-pip install pandas scikit-learn
-```
-
-# Project Steps
- * Load the CSV file containing the movie reviews.
+# 
+ * 
 
 ## Clean the data:
 
@@ -221,6 +209,7 @@ pip install pandas scikit-learn
 * Try predicting the sentiment of a custom review to test the model.
 
 ## Sample Output
+
 * Displays the first few rows from the dataset.
 
 * Shows the accuracy of the trained model (for example: 87%).
