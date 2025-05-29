@@ -1,40 +1,6 @@
-##  Run the Scripts
+# Text Classification Projects with Naive Bayes
 
-Run these commands in your terminal to execute each Python script:
-
-```bash
-python bernoli.py
-```
-```
-python job_tagger.py
-```
-```
-python language_detection.py
-```
-```
-python naive_bayes.py
-```
-```
-python sentiment_analyse.py
-```
-```
-python spam_bernolli.py
-```
-```
-python spam_gassian.py
-```
-```
-python tf_idf_naive_bayes.py
-```
-
-
-
-
-
-#Text Classification Projects with Naive Bayes
-
-This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
-
+## This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
 ---
 
 ## Project 1: Spam Detection using Multinomial Naive Bayes
@@ -89,9 +55,7 @@ Uses word importance (not just count) to find out if a message is spam.
 3. Model is trained.
 4. New message is checked for spam or not.
 
-
-
----
+--------
 
 ## Project 4: Sentiment Analysis using Multinomial Naive Bayes
 
@@ -309,10 +273,40 @@ pip install pandas
 pip install tk
 ```
 
+##  Run the Scripts
+
+Run these commands in your terminal to execute each Python script:
+
+```bash
+python bernoli.py
+```
+```
+python job_tagger.py
+```
+```
+python language_detection.py
+```
+```
+python naive_bayes.py
+```
+```
+python sentiment_analyse.py
+```
+```
+python spam_bernolli.py
+```
+```
+python spam_gassian.py
+```
+```
+python tf_idf_naive_bayes.py
+```
+
 ---
 ## Summary Table:
 
-| Library Name               | Explanation                                                    |
+|---------------------------|----------------------------------------------------------------|
+| Library Name              | Explanation                                                    |
 |---------------------------|----------------------------------------------------------------|
 | `TfidfVectorizer`         | Converts resume text to vector form by assigning importance    |
 | `MultinomialNB`           | Predicts job role based on the resume using classification     |
@@ -320,6 +314,6 @@ pip install tk
 | `accuracy_score`          | Evaluates if the prediction is correct                         |
 | `tkinter`                 | Used to create the GUI elements like window, buttons, etc.     |
 | `messagebox`              | Displays the prediction result in a popup                      |
-  
+|---------------------------|----------------------------------------------------------------|  
 
 
