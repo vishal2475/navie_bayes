@@ -23,7 +23,9 @@ python spam_bernolli.py
 ```
 python spam_gassian.py
 ```
+```
 python tf_idf_naive_bayes.py
+```
 
 
 
