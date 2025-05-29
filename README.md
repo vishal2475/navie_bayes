@@ -1,6 +1,6 @@
 # Text Classification Projects with Naive Bayes
 
-## This project shows how to use machine learning to check if a message is spam or not, or if a review is positive or negative.
+## This projects are used to check if a message is spam or not, or if a review is positive or negative.
 ---
 
 ## Project 1: Spam Detection using Multinomial Naive Bayes
@@ -174,8 +174,8 @@ This project classifies IMDb movie reviews as **Positive ** or **Negative ** usi
   - `text`: Contains the movie review  
   - `label`: Contains the sentiment (either `positive` or `negative`)
  
-    
-< **Note :** If you loaded the CSV file in the `python sentiment_analyse.py` program.
+## Check :    
+> **Note :** If you loaded the CSV file in the `python sentiment_analyse.py` program.
 ---
 
 ##  Requirements
